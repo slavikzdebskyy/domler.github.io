@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Letarget - domler - test</title>	
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/montserrat.css">
+	<link rel="stylesheet" href="./css/main.min.css">
+	<link rel="stylesheet" href="./css/icon.css">
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#"  onclick="activateNav(this)">ГОЛОВНА</a> <span class="marker"></span> </li>
+						<li><a href="#"  onclick="activateNav(this)">ОРЕНДАРЯМ</a> <span class="marker"></span> </li>
+						<li class="active"><a href="#"  onclick="activateNav(this)">ОРЕНДОДАВЦЯМ</a> <span class="marker"></span> </li>
+						<li><a href="#"  onclick="activateNav(this)">ПРО НАС</a> <span class="marker"></span> </li>
+						<li><a href="#"  onclick="activateNav(this)">КОНТАКТИ</a> <span class="marker"></span> </li>
+					</ul>
+					<div class="phones">
+							<span class="icon-phone-receiver"></span>
+						<p>
+								+38098 09 55 687<br>+38063 02 60 643
+						</p>
+					</div>
+				</div>				
+			</div>
+		</nav>
+
+		<div class="row">
+			<div class="col-md-8">
+				<h1>ПРИДБАЄМО НЕРУХОМІСТЬ У БУДЬ-ЯКІЙ ЧАСТИНІ ЛЬВОВА</h1>
+			</div>		
+		</div>
+		<div class="order-us" onclick="showOrderForm()">		
+			<h5>
+				НАЙМІТЬ НАС
+			</h5>
+		</div>
+		<form action="#" class="order-form" id="odr-frm">
+				<span class="icon-right-arrow" onclick="hideOrderForm()"></span>
+				<input type="text" placeholder="Ім'я" requare>
+				<input type="text" placeholder="Телефон" requare>
+				<select placeholder="Що Вас цікавить">
+						<option value="buy">Купити</option>
+						<option value="sale">Продати</option>
+						<option value="rent">Орендувати</option>
+						<option value="lease">Здати в оренду</option>
+					</select>
+				<textarea name="message" rows="5"  placeholder="Повідомлення" value="message"></textarea>
+				<input type="submit" id="btn-submit" value="НАДІСЛАТИ">
+			</form>
+	</header>
+	<div class="choise">
+		<div class="row">
+			<div class="col-md-2 col-sm-offset-1">
+				<h5>ГАРАНТІЯ ЯКОСТІ</h5>
+				<h3>ОРЕНДА <span class="icon-right-arrow"></span></h3>
+				<button>ЗАМОВИТИ</button>
+			</div>
+			<div class="col-md-2 col-sm-offset-1">
+				<h5>ВЕЛИКА БАЗА</h5>
+				<h3>КУПІВЛЯ <span class="icon-right-arrow"></span></h3>
+				<button>ЗАМОВИТИ</button>
+			</div>
+			<div class="col-md-2 col-sm-offset-1">
+				<h5>ВСЕБІЧНА ДОПОМОГА І СУПРОВІД</h5>
+				<h3>ПРОДАЖ <span class="icon-right-arrow"></span></h3>
+				<button>ЗАМОВИТИ</button>
+			</div>
+		</div>
+	</div>
+	<div class="row exlusive-rieltor">
+		<div class="col-md-5 col-sm-offset-1">
+			<h5>
+					Ваш ексклюзивний ріелтор
+					<span class="marker"></span>
+			</h5>
+			<h2>Вся нерухомість Львова  за 30 хв</h2>
+			<p>
+					Ваш ексклюзивний ріелтор це новинка на ринку нерухомості. 
+					Компанія надає вам ексклюзивного ріелтора, який працює лише з 
+					вами і забовязується в розумні терміни підшукати вам підходяще 
+					житло,( або ж його продати чи здати в оренду) При цьому нічого не 
+					оплачуючи. Таку функцію можна узгодити в двох напрямках. Перший 
+					можна скласти договір в письмовій формі. Другий можна узгодини 
+					все в усній формі ( В Людських відносинах). Це гарантія того, що цей 
+					ріелтор буде заповнений роботою виключно з вами, це значно 
+					полекшить вам пошуки житла або ж потенційних клієнтів і не потрібно 
+					буде звонити до десятків різних агенств і чути від них пропозиції, які
+					 абсолютно не підходять вашим вимогам.
+			</p>
+			<button>ЧИТАТИ БІЛЬШЕ</button>
+		</div>
+		<div class="col-md-5">
+			<img src="./images/adult-chill-computer-450271.jpg" alt="image">
+		</div>
+	</div>
+	<div class="row gallery">
+		<div class="col-md-7">
+			<img class="main-img fadeIn" src="./images/architecture-contemporary-couch-279607.jpg" alt="gallery">
+			<img class="main-img fadeIn" src="./images/apartment-architecture-bookcase-271816.jpg" alt="gallery">
+			<img class="main-img fadeIn" src="./images/apartment-ceiling-chairs-280232.jpg" alt="gallery">
+			<img class="main-img fadeIn" src="./images/appliances-architecture-ceiling-534151.jpg" alt="gallery">
+			<div class="title fadeInright">
+				<span>300$</span>
+				<p>
+						ЗАТИШНА 2 КІМНАТНА КВАРТИРА У ЦЕНТРІ МІСТА ЛЬВОВА
+				</p>
+			</div>
+			<div class="title fadeInright">
+					<span>250$</span>
+					<p>
+							ЗАТИШНА 1 КІМНАТНА КВАРТИРА У ЦЕНТРІ МІСТА ТЕРОПОЛЯ
+					</p>
+				</div>
+				<div class="title fadeInright">
+						<span>700$</span>
+						<p>
+								ЗАТИШНА 2 КІМНАТНА КВАРТИРА У ЦЕНТРІ МІСТА КИЄВА
+						</p>
+					</div>
+					<div class="title fadeInright">
+							<span>540$</span>
+							<p>
+									ЗАТИШНА 2 КІМНАТНА КВАРТИРА У ЦЕНТРІ МІСТА КИЄВА
+							</p>
+						</div>
+		</div>
+		<div class="col-md-5">
+			<div class="row control">
+				<div>
+					<span id="slide-number">1</span><span id="slide-count"></span>
+				</div>				
+				<div>
+					<button onclick="nextOrPrevSlide(-1)"><span class="icon-left-arrow"></span></button>
+					<button onclick="nextOrPrevSlide(1)"><span class="icon-right-arrow"></span></button>
+				</div>				
+			</div>
+			<img class="mini-img fadeIn" src="./images/apartment-architecture-bookcase-271816.jpg" alt="gallery">
+			<img class="mini-img fadeIn" src="./images/apartment-ceiling-chairs-280232.jpg" alt="gallery">
+			<img class="mini-img fadeIn" src="./images/appliances-architecture-ceiling-534151.jpg" alt="gallery">
+			<img class="mini-img fadeIn" src="./images/architecture-contemporary-couch-279607.jpg" alt="gallery">
+		</div>
+	</div>
+	<div class="row response-title">
+			<h5>
+					Відгуки
+					<span class="marker"></span>
+			</h5>
+		<h3>ПРО НАС ГОВОРЯТЬ</h3>
+	</div>
+	<div class="row response">
+		<div class="col-md-6">
+			<div class="video one">
+					<h5 class="name-title">ВАЛЕНТИН 45 РОКІВ, БІЗНЕСМЕН</h5>
+					<span class="icon-play3"></span>					
+			</div>
+			<p>
+					Дуже дякую агенству домлер, за 
+					швидку та якісну роботу
+			</p>
+		</div>
+		<div class="col-md-6">
+			<div class="video two">
+				<h5 class="name-title long">ІРА 22 РОКИ, СТУДЕНТ</h5>
+				<span class="icon-play3"></span>				
+			</div>
+			<p>
+					Дуже довго не могли знайти
+					житло, а Ігор вирішив всі наші 
+					проблеми за один день
+			</p>		
+		</div>
+	</div>
+	<div class="row promo">
+		<div class="title-promo">
+			<h3>МИ ДОПОМОЖЕМО ЗНАЙТИ ЖИТЛО ВАШОЇ МРІЇ</h3>
+				<p>
+				Вам потрібно зняти квартиру у Львові? 
+				Агентство нерухомості «Domler» допоможе 
+				вибрати квартиру у відповідністі з вашими 
+				вимогами і візьме на себе пошук і оформлення 
+				договору оренди. Перегляд квартир з нашим 
+				ріелтором буде у зручний для вас час. Фахівці 
+				агентства допоможуть вам зняти житло у 
+				Львові .
+		</p>
+		<button>НАЙНЯТИ НАС</button>
+		</div>	
+	</div>
+	<footer>
+		<div class="footer-block">
+			<img src="./images/logo.png" alt="logo">
+		</div>
+		<div class="footer-block">
+			<h4>КАРТА САЙТУ</h4>
+			<ul>
+					<li><a href="#">ГОЛОВНА</a></li>
+					<li><a href="#">ОРЕНДАРЯМ</a></li>
+					<li><a href="#">ОРЕНДОДАВЦЯМ</a></li>
+					<li><a href="#">ПРО НАС</a></li>
+					<li><a href="#">КОНТАКТИ</a></li>
+				</ul>
+		</div>
+		<div class="footer-block">
+				<h4>КОНТАКТИ</h4>
+				<ul>
+						<li><a href="#">info@domler.com.ua</a></li>
+						<li>+38098 09 55 687</li>
+						<li>+38063 026 06 43 (Viber)</li>
+						<li>+38099 763 98 82</li>
+						<li><Вул. Лазаренка 2 офіс 217 (3 поверх)</li>
+					</ul>
+		</div>
+		<div class="footer-block">
+				<h4>ПІДПИСАТИСЯ НА ОНОВЛЕННЯ</h4>
+				<input type="email" placeholder="info@domler.com.ua" requare>
+				<input type="submit" value="НАДІСЛАТИ">
+		</div>
+	</footer>
+
+
+
+
+
+
+
+	<script src="./js/main.js"></script>
+	<script src="./js/libs.min.js"></script>
+</body>
+</html>
